@@ -1,20 +1,20 @@
 # -------------------------------
 # Simulation Parameters
 # -------------------------------
-x_range 200
-dx 0.2
-dt 0.02 #small in front of dx^2              
-t_max 300
-save_every 1
+x_range 150
+dx 1
+dt 0.1 #small in front of dx^2              
+t_max 100000
+save_every 100
 
 # -------------------------------
 # Initial Condition Parameters
 # -------------------------------
-theta_l 0.1     # theta_l and r in units of pi
-theta_r 0.9
+theta_l 0.05     # theta_l and r in units of pi
+theta_r 0.05
 v_l 0.
 v_r 0.
 
 # Smoothing
-smoothing 10            # epsilon = smoothing * dx
+smoothing 5            # epsilon = smoothing * dx
 

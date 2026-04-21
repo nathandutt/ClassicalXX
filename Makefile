@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -O3 -std=c++17 -Wall
 TARGET = ClassicalXX
-SRC = simu.cpp
+SRC = main.cpp
 CSV = evolution.csv
 
 all: $(TARGET)

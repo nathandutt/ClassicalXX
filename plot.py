@@ -20,7 +20,7 @@ def read_config(filename):
             else:
                 print(f"Warning: Skipping invalid line (expected key-value pair) in config: {line}")
     return config
-config = read_config('config.txt')
+config = read_config('simu.params')
 x_range = config.get('x_range', 20)
 theta_l = config.get('theta_l', 1.)
 theta_r = config.get('theta_r', 1.)
@@ -70,7 +70,7 @@ with open('evolution.csv', newline='') as csvfile:
         rplus = theta+sigma
         rminus = theta - sigma
         line1.set_ydata(S_z)
-        line2.set_ydata(v)
+        line2.set_ydata(0)
         time_text.set_text(rf'$\tau$={t:.2f}')
         fig.canvas.draw()
         fig.canvas.flush_events()
