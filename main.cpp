@@ -275,7 +275,7 @@ std::vector<double> InitialPhi(const Config& config){
 	 *
 	 */
 
-	doubel u_i = 0.;
+	double u_i = 0.;
 	u.emplace_back(u_i);
     } 
     return u;
